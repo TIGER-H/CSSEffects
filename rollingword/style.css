@@ -2,7 +2,7 @@ h2 {
   width: 980px;
   font-size: 106px;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.2;
+  line-height: 1.06;
   letter-spacing: -0.02em;
   color: #1d1d1f;
 }
@@ -12,6 +12,7 @@ h2 {
   position: relative;
   overflow: hidden;
   /* border: 1px solid pink; */
+  padding-bottom: 6px;
 }
 
 .mask span{
