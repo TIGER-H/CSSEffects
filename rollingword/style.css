@@ -1,0 +1,32 @@
+h2 {
+  width: 980px;
+  font-size: 106px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+}
+
+.mask {
+  height: 106px;
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid pink; */
+}
+
+.mask span{
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 106px;
+}
+
+.mask span[data-show]{
+    transform: translateY(-100%);
+    transition: .5s transform ease-in;
+}
+
+.mask span[data-up]{
+    transform: translateY(-200%);
+    transition: .5s transform ease-out;
+}

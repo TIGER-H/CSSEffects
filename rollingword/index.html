@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <h2>Turing your living room into
+        <div class="mask">
+            <span data-up>a theater.</span>
+            <span data-show>a gym.</span>
+            <span>a concert hall.</span>
+            <span>an arcade.</span>
+        </div>
+    </h2>
+    <script>
+        setInterval(() => {
+            const show = document.querySelector('span[data-show]')
+            const next = show.nextElementSibling || document.querySelector('span:first-child')
+            const up = document.querySelector('span[data-up]')
+            if(up){
+                up.removeAttribute('data-up')
+            }
+            show.removeAttribute('data-show')
+            show.setAttribute('data-up','')
+            
+            next.setAttribute('data-show', '')
+
+        }, 2000);
+    </script>
+</body>
+</html>
